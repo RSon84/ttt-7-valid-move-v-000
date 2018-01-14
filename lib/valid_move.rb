@@ -1,4 +1,4 @@
-board = (user_input.to_i - 1)
+board = (index.to_i - 1)
 
 def valid_move?(board, index)
   if position_taken?(board, index) == [0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8] && position_taken?(board, index) != ("X") && position_taken?(board, index) != ("O")
