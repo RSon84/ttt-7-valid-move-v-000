@@ -1,9 +1,5 @@
-def valid_move?(board, index)
-  if position_taken?(board, index) == board[index].between?(0, 8)
-    return true
-  else position_taken?(board, index) != board[index].between?(0, 8)
-    return false
-  end
+def valid_move?(number_entered, board)
+  number_entered.between?(0, 8) && !(position_taken?(board, number_entered))
 end
 
 def position_taken?(board, index)
